@@ -1,20 +1,78 @@
-body {
-    font-family: "Open Sans";
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
+/* GLOBAL RESET: Removes default browser spacing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+    font-family: "Open Sans", sans-serif;
 }
-.hero_section{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
+
+/* BASE LINK STYLES: Removes underlines from all links and keeps text color natural */
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+/* HERO SECTION: The large background area at the top */
+.hero_section {
+    width: 100%; /* Changed from 1600px to be more responsive */
+    max-width: 1600px; /* Limits growth on very large screens */
+    margin: 0 auto; /* Centers the hero container */
     height: 837px;
     background: #FFF8F3;
 }
-.hero_section nav > h2{
-    color: var(--Dark-01, #181818);
+
+/* HEADER: Adds space above the navigation */
+header {
+    padding-top: 50px;
+}
+
+/* NAVIGATION: Container for logo and menu */
+nav {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0px auto;
+    display: flex; /* Makes Logo and UL sit side-by-side */
+    justify-content: space-between; /* Pushes logo to left, menu to right */
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+/* LOGO: Styling for the 'Saif' text */
+.logo {
+    color: #181818;
     font-size: 45px;
-    font-style: normal;
     font-weight: 800;
+}
+
+/* NAVIGATION LIST: Styling the menu items */
+nav ul {
+    list-style: none; /* Removes the bullet points */
+    display: flex;    /* Makes the list items horizontal */
+    gap: 30px;        /* Adds space between Portfolio, Blog, and Button */
+    align-items: center;
+    color: #474747;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
+}
+
+/* BUTTON: The orange container for the 'Hire Me' link */
+.hero_section nav ul li button {
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0; /* Removes default button border */
+    cursor: pointer; /* Changes mouse to hand icon on hover */
+}
+
+/* BUTTON LINK: Specific text styling for the link inside the button */
+.hero_section nav ul li button a {
+    color: #FFFFFF; /* Makes the 'Hire Me' text white */
+    font-size: 20px;
+    font-weight: 700;
+    display: block; /* Makes the entire button area clickable */
+    width: 100%;
+    line-height: 65px; /* Centers text vertically inside button */
 }
