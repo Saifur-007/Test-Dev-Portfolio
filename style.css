@@ -1,0 +1,10 @@
+body {
+    font-family: "Open Sans";
+}
+.hero_section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    height: 837px;
+    background: #FFF8F3;
+}
