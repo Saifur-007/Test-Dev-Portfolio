@@ -257,6 +257,7 @@ nav ul {
     margin: 0;         /* Removes any default spacing */
 }
 /* Use a more specific selector to override the section-wide center rule */
+
 #what_i_do_section .skill_box p {
     text-align: left !important; /* Forces alignment to the left */
     width: 100%;
