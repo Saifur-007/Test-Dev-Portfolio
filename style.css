@@ -197,3 +197,71 @@ nav ul {
     font-size: 20px;
     font-weight: 700;
 }
+#what_i_do_section h3{
+    color: var(--Dark-01, #181818);
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#what_i_do_section p{
+    color: var(--Dark-03, #757575);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    max-width: 827px;
+    width: 100%;
+    margin: 0 auto;
+}
+.skills {
+    display: flex;          /* Changed from inline-flex */
+    justify-content: center; 
+    align-items: stretch;    /* Makes all cards the same height */
+    gap: 24px;
+    margin-top: 50px;       /* Space between the intro text and the cards */
+}
+.skill_box img{
+    width: 44px;
+    height: 44px;
+}
+
+.skill_box {
+    background: #FFFFFF; /* Makes the box visible */
+    padding: 30px;      /* Adds space inside the box */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06); /* Adds that soft shadow */
+    /* Layout inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left like the design */
+    gap: 15px;               /* Space between icon, title, and text */
+    width: 267px;            /* Gives the box a set width */
+}
+.skill_box h4 {
+    color: var(--Dark-01, #181818);
+    text-align: left !important; /* Forces alignment to the left */
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;       /* Ensures the centering works relative to the box */
+}
+
+.skill_box p {
+    color: var(--Dark-03, #757575);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;  /* This moves ONLY the paragraph text to the left */
+    width: 100%;       /* Allows text to use the full width of the box */
+    margin: 0;         /* Removes any default spacing */
+}
+/* Use a more specific selector to override the section-wide center rule */
+#what_i_do_section .skill_box p {
+    text-align: left !important; /* Forces alignment to the left */
+    width: 100%;
+    margin: 0;
+    color: #757575;
+    font-size: 16px;
+    line-height: 28px;
+}
